@@ -529,12 +529,12 @@ header{
 <div class="admin-overlay" id="loginOverlay">
   <div class="modal-box modal-sm">
     <h2>Вход</h2>
-    <p class="login-hint">Введите пароль для доступа к панели управления</p>
+    <p class="login-hint"></p>
     <div class="form-group">
       <label class="form-label">Пароль</label>
-      <input type="password" class="form-input" id="passwordInput" placeholder="••••••••" onkeydown="if(event.key==='Enter')doLogin()">
+      <input type="password" class="form-input" id="passwordInput" placeholder="" onkeydown="if(event.key==='Enter')doLogin()">
     </div>
-    <div class="login-error" id="loginError">Неверный пароль</div>
+    <div class="login-error" id="loginError"></div>
     <div class="modal-actions">
       <button class="btn btn-ghost" onclick="closeLogin()">Отмена</button>
       <button class="btn btn-gold" onclick="doLogin()">Войти</button>
@@ -546,7 +546,7 @@ header{
 <div class="admin-overlay" id="adminOverlay">
   <div class="modal-box">
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;">
-      <h2 style="margin-bottom:0">Панель управления</h2>
+      <h2 style="margin-bottom:0">Панель</h2>
       <button onclick="closeAdmin()" style="background:transparent;border:none;color:var(--muted);font-size:24px;cursor:pointer;line-height:1;padding:0 4px;transition:color 0.2s" onmouseover="this.style.color='var(--text)'" onmouseout="this.style.color='var(--muted)'">×</button>
     </div>
     <div class="admin-tabs">
